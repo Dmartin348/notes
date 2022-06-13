@@ -93,11 +93,7 @@ After the installation is complete, verify that you have installed Git properly 
 
 In order to install Java, run the following command in your terminal:
 
-    scoop install lessmsi; scoop config MSIEXTRACT_USE_LESSMSI $true
-
-Then run:
-
-    scoop install ojdkbuild8-full
+    scoop install ojdkbuild8
 
 Java should have successfulls installed and scoop has configured your path variables.<br>
 Now verify that you have installed Java properly by typing this command:
@@ -108,7 +104,7 @@ Now verify that you have installed Java properly by typing this command:
 
 In order to install Eclipse, run this command in your terminal:
 
-    scoop install eclipse-jee@2020-12
+    scoop install eclipse-jee
 
 Eclipse for Java JEE developers provides tools to optimize the development of Java applications.
 
