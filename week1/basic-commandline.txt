@@ -1,0 +1,28 @@
+Basic Command Line:
+
+Goal: Navigate the file structure using git bash
+
+relative path: points to a location in the filesystem based on the current directory
+absolute path: points to a location in the filesysstem regardless of the current directory
+
+~: refers to the home directory (/c/Users/[your-user])
+/: refers to the root directory
+	- upmost directory
+..: refers to the parent directory
+.: refers to the current directory
+
+ls: list the contents of the current directory
+	-a (flag) to list the hidden items
+		- hidden items are preceded with a "."
+cd: change directory (use tab to autocomplete)
+mkdir: create directory
+touch: create a file
+cat: display the content of file
+rm: delete file
+	-rf: delete a directory
+mv: move element (file, directory)
+	- mv [file-name] [target/location]
+vim/nano: text editors, used to create/edit files
+
+More info:
+https://cheat.sh/
