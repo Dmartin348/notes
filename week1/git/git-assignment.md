@@ -1,0 +1,12 @@
+# Git Activity:
+- Create a PUBLIC repository in our organization and name it: firstname-lastname (ie: kevin-tranhuu)
+	-  you can add a README file to initialize your repository
+- USING THE COMMAND LINE (ie: gitbash)
+	- Clone your repository on your local device
+	- Create two folders in your repository
+		- "assignments"
+		- "projects"	
+	- Within the "assignments" directory, create a "week1" folder and within it, create a file called "about-me.txt"
+	- Using the commandline text editor of your choice (nano, vim...) edit the file and add a sentence about yourself
+	- Push the file you created to your newly created repository 
+        - The file should now be visible on GitHub

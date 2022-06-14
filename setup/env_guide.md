@@ -130,7 +130,7 @@ You can verify that you have installed DBeaver properly by searching for "DBeave
 
 In order to install Tomcat, run the following command in your terminal:
 
-    scoop install tomcat
+    scoop install tomcat8
 
 Verify that you have installed Tomcat properly by running the following command:
 
@@ -148,41 +148,26 @@ Verify that the program was installed properly by searching for "Postman" in you
 
 ### Step 10: Install PostgreSQL
 
-In order to install PostgreSQL, we will NOT be using Scoop as we require PostgreSQL 10, a version that is not currently supported by Scoop. That said, we will manually download the PostgreSQL installer visiting the [official website](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads).
+In order to install PostgreSQL, run the following command in your terminal:
 
-Once you've navigated to the website, you should see the following:
-
-![Postgres Download Home](./images/postgres-download.PNG)
-
-Please look at the row for **version 10.13** as we will downloading this version. Select the download link which corresponds with your system and click it.
-
-You'll then be prompted to save the file. Click "Save File".
-
-![Save Postgres Installer](./images/save-postgres.PNG)
-
-The file should now be located in your "Downloads" folder.
-
-![Postgres In Downloads Folder](./images/postgres-in-downloads.PNG)
-
-Double click the file, which should launch the installer. You might be asked if you want the application to make changes to your device. Say "yes".
-
-You'll be presented with several menus in the Setup Wizard.
-
-![Postgres Setup Wizard](./images/postgres-setup.PNG)
-
-Hit "Next" until you get to the "Select Components" menu. Here, you'll want to select and/or deselect the following and then click "Next":
-
-![Postgres Components](./images/postgres-components.PNG)
-
-Continue to hit "Next" until you reach the "Password" menu. Here you will be tasked with providing a password for the default Postgres user (which is "postgres"). The password is completely up to you. That said, DO NOT forget your password as you won't be able to login to your database as the superuser. If you have to, write your password down somewhere or use a password manager.
-
-![Postgres Password](./images/postgres-password.PNG)
-
-After you've decided on a password, hit "Next" on the remaining menus and allow time for Postgres to be installed. Once the installation is complete, you might be asked if you want to launch Stack Builder. You can say "no".
+    scoop install postgresql@10.21
 
 PostgreSQL should now be successfully installed on your computer.
 
-### Step 11: Install Visual Studio Code (Optional)
+To start Postgres locally run in your terminal:
+
+    pg_ctl start
+
+To stop Postgres locally run in your terminal:
+
+    pg_ctl stop
+
+Once started, Postgres will be available:
+- url: localhost:5432/postgres
+- username: postgres
+- password: (empty)
+
+### Step 11: Install Visual Studio Code
 
 In order to install Visual Studio Code, run the following command in your terminal:
 
@@ -443,7 +428,7 @@ Once you've navigated to the website, you should see the following:
 
 ![Postgres Download Home](./images/postgres-download.PNG)
 
-Please look at the row for **version 10.13** as we will downloading this version. Select the download link which corresponds with your system and click it.
+Please look at the row for **version 10.XX** as we will downloading the latest Postgres 10 version. Select the download link which corresponds with your system and click it.
 
 You'll then be prompted to save the file. Click "Save File".
 
@@ -509,7 +494,7 @@ Once you've navigated to the site, you should see the following screen:
 
 ![Tomcat Home](./images/tomcat-home.PNG)
 
-Scroll down until you see the section labeled "Tomcat 8.5.56" as shown below. Click the "Download" link at the bottom of this section.
+Scroll down until you see the section labeled "Tomcat 8.5.81" as shown below. Click the "Download" link at the bottom of this section.
 
 ![Tomcat 8](./images/tomcat-8.PNG)
 
